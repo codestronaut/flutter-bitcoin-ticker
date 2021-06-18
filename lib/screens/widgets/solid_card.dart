@@ -1,19 +1,19 @@
 part of 'widgets.dart';
 
-class OutlinedCard extends StatelessWidget {
+class SolidCard extends StatelessWidget {
   final String text;
-  const OutlinedCard({required this.text});
+  const SolidCard({required this.text});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
+        color: Colors.grey[900],
         borderRadius: BorderRadius.circular(
           10.0,
         ),
-        border: Border.all(
-          color: Colors.cyan,
-        ),
+        border: Border.all(),
       ),
       padding: const EdgeInsets.all(20.0),
       margin: const EdgeInsets.all(10.0),
@@ -21,7 +21,6 @@ class OutlinedCard extends StatelessWidget {
         text,
         textAlign: TextAlign.center,
         style: GoogleFonts.nunito(
-          color: Colors.cyan,
           fontSize: 24.0,
         ),
       ),

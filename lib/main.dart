@@ -1,4 +1,4 @@
-import 'package:bitcoin_ticker/pages/home_page.dart';
+import 'package:bitcoin_ticker/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
